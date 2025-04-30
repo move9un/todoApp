@@ -1,0 +1,239 @@
+h1 {
+    margin-bottom: 30px; /* 기본은 30~40px 이상일 수 있음 */
+  }
+
+  ul {
+    list-style: none;        /* ✅ 점 제거 */
+    padding-left: 0;         /* ✅ 왼쪽 여백 제거 */
+    margin: 0;               /* ✅ 기본 마진 제거 */
+  }
+  
+  
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dark {
+    background-color: #1e1e1e;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* 공통 버튼 스타일 */
+  button {
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* 기본 버튼 (추가, 필터, 정렬, 테마 버튼 등에 적용) */
+  .primaryButton {
+    background-color: #eee;
+    color: #000;
+    padding: 8px 16px;
+    margin: 0 8px;
+  }
+  
+  .primaryButton:hover {
+    background-color: #ddd;
+  }
+  
+  .dark .primaryButton {
+    background-color: #444;
+    color: white;
+  }
+  
+  .dark .primaryButton:hover {
+    background-color: #555;
+  }
+  
+  /* 테마 전환 버튼 */
+  .themeToggle {
+    margin-bottom: 20px;
+  }
+  
+  /* 입력 영역 */
+  .inputArea {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .inputArea input {
+    width: 100%;
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;           /* ✅ 버튼과 동일한 라운드 */
+    border: 1px solid #ccc;       /* 테두리 부드럽게 */
+    margin-right: 10px;           /* 버튼과 공간 주기 */
+    transition: border-color 0.2s ease;
+  }
+  
+  .inputArea input:focus {
+    outline: none;
+    border-color: #888;
+  }
+  
+  .dark .inputArea input {
+    background-color: #2b2b2b;
+    color: white;
+    border: 1px solid #555;
+  }
+  
+  .dark .inputArea input:focus {
+    border-color: #999;
+  }
+  
+  
+  /* 필터 버튼 */
+  .filterButtons {
+    margin-bottom: 10px;
+  }
+  
+  .filterButtons button {
+    margin: 0 5px;
+  }
+  
+  /* 정렬 버튼 */
+  .sortButtons {
+    margin-bottom: 10px;
+  }
+  
+  .sortButtons button {
+    margin: 0 5px;
+    padding: 6px 12px;
+  }
+  
+  /* 요약 박스 */
+  .summaryBox {
+    margin: 20px 0 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .dark .summaryBox {
+    background-color: #2c2c2c;
+    color: #eee;
+  }
+  
+  /* 활성 필터 */
+  .active {
+    background-color: #333;
+    color: white;
+  }
+  
+  /* 삭제 버튼 전용 스타일 */
+  .deleteButtons {
+    margin: 10px 0 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .deleteButtons button {
+    padding: 8px 16px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .deleteButtons button:first-child {
+    background-color: #e74c3c;
+  }
+  
+  .deleteButtons button:last-child {
+    background-color: #e67e22;
+  }
+  
+  .deleteButtons button:first-child:hover {
+    background-color: #c0392b;
+  }
+  
+  .deleteButtons button:last-child:hover {
+    background-color: #d35400;
+  }
+  
+  .dark .deleteButtons button:first-child {
+    background-color: #c0392b;
+  }
+  
+  .dark .deleteButtons button:last-child {
+    background-color: #d35400;
+  }
+  
+  .dark .deleteButtons button:first-child:hover {
+    background-color: #922b21;
+  }
+  
+  .dark .deleteButtons button:last-child:hover {
+    background-color: #ba4a00;
+  }
+  
+
+  .progressBarWrapper {
+    height: 10px;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 8px;
+  }
+  
+  .progressBar {
+    height: 100%;
+    background-color: #4caf50; /* 초록색 */
+    transition: width 0.3s ease;
+  }
+  
+  .dark .progressBarWrapper {
+    background-color: #444;
+  }
+  
+  .dark .progressBar {
+    background-color: #27ae60; /* 더 선명한 초록색 */
+  }
+  
+
+  .topRight {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+  }
+  
+  .tagSelect {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 5px;       /* ✅ 둥글게 */
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #333;
+    appearance: none;         /* 🔍 기본 브라우저 스타일 제거 (크롬/사파리 등) */
+  }
+  
+  .dark .tagSelect {
+    background-color: #2b2b2b;
+    color: white;
+    border: 1px solid #555;
+  }
+  

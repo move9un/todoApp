@@ -1,0 +1,62 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .textBlock {
+    flex: 1;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .done {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .date {
+    font-size: 12px;
+    color: #888;
+    margin-top: 4px;
+  }
+  
+  .editInput {
+    width: 100%;
+    padding: 6px;
+    font-size: 16px;
+  }
+  
+  .tag {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 12px;
+  color: white;
+  margin-top: 4px;
+}
+
+/* 태그별 색상 */
+.tag_공부 {
+  background-color: #3498db; /* 파랑 */
+}
+
+.tag_운동 {
+  background-color: #2ecc71; /* 초록 */
+}
+
+.tag_업무 {
+  background-color: #e67e22; /* 주황 */
+}
+
+.meta {
+    display: flex;
+    gap: 12px;        /* ✅ 여기서 날짜와 태그 간 간격을 조절 */
+    margin-top: 4px;
+    align-items: center;
+    font-size: 12px;
+    color: #888;
+  }
+  
